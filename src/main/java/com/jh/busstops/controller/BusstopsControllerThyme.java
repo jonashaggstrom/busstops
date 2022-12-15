@@ -20,8 +20,6 @@ public class BusstopsControllerThyme {
 
 	@GetMapping("/busstopsthyme")
 	public String busstopsThyme(@RequestParam(defaultValue = "defaultkey") String key, Model model) {
-	
-		System.out.println("key:"+ key);
 		Map<Integer, ArrayList<String>> topTenMap= bsmodel.getTopTen(key);
 		
 		Iterator<Entry<Integer, ArrayList<String>>> it = topTenMap.entrySet().iterator();
