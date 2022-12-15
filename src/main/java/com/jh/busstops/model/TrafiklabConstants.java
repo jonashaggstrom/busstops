@@ -8,7 +8,7 @@ public class TrafiklabConstants {
 	public static final String TRAFIKLAB_BUS_LINE_DATA_URL = "https://api.sl.se/api2/LineData.json?model=Line&key=[key]&DefaultTransportModeCode=BUS";
 	public static final String TRAFIKLAB_JOUR_DATA_URL ="https://api.sl.se/api2/LineData.json?model=jour&key=[key]&DefaultTransportModeCode=BUS";
 	public static final String TRAFIKLAB_STOP_DATA_URL ="https://api.sl.se/api2/LineData.json?model=stop&key=[key]";
-	//public static final String TRAFIKLAB_KEY ="1d0894cf1c2341ada00e5b4b17a6bf23";
+	//public static final String TRAFIKLAB_KEY ="fookey";
 	public static final String fullBusLines="https://api.sl.se/api2/LineData.json?model=line&key=1d0894cf1c2341ada00e5b4b17a6bf23&DefaultTransportModeCode=BUS";
 	
 	/*

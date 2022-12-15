@@ -64,7 +64,8 @@ public class BusstopsModel {
 			System.out.println("Caught IOException:" + e.getMessage());
 			return null;
 		}
-		String formattedResponse=response.toString().replace('\"', '\'');
+		//String formattedResponse=response.toString().replace('\"', '\'');
+		String formattedResponse=response.toString();
 		int startIndex=formattedResponse.indexOf("[");
 		//System.out.println("startIndex: " +startIndex);
 		int endIndex=formattedResponse.indexOf("]");
@@ -125,7 +126,8 @@ public class BusstopsModel {
 			System.out.println("Caught IOException:" + e.getMessage());
 			return null;
 		}
-		String formattedResponse=response.toString().replace('\"', '\'');
+		//String formattedResponse=response.toString().replace('\"', '\'');
+		String formattedResponse=response.toString();
 		int startIndex=formattedResponse.indexOf("[");
 		//System.out.println("startIndex: " +startIndex);
 		int endIndex=formattedResponse.indexOf("]");
@@ -184,7 +186,8 @@ public class BusstopsModel {
 			System.out.println("Caught IOException:" + e.getMessage());
 			return null;
 		}
-		String formattedResponse=response.toString().replace('\"', '\'');
+		//String formattedResponse=response.toString().replace('\"', '\'');
+		String formattedResponse=response.toString();
 		int startIndex=formattedResponse.indexOf("[");
 		//System.out.println("startIndex: " +startIndex);
 		int endIndex=formattedResponse.indexOf("]");
