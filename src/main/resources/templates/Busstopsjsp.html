@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head> 
+    <title>Counting Bus Stops</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<style>
+	table, th, td {
+  		border: 1px solid black;
+  		border-collapse: collapse;
+	}
+</style>
+<script>
+
+
+$(document).ready(function () {
+     var data = new Array();
+     $.ajax({
+         url: "busstopsjsp",
+         type: "Get",
+         data: JSON.stringify(data),
+         dataType: 'json',
+         success: function (data) {
+             $.each(data, function (index) {
+                 // alert("id= "+data[index].id+" name="+data[index].name);
+                 $('#myTable tbody').append("<tr class='child'><td>" + data[index].id + "</td><td>" + data[index].name + "</td></tr>");
+             });
+
+         },
+         error: function (msg) { alert(msg); }
+     });
+ });
+</script>
+<body>
+
+</body>
+</html>

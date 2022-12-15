@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head> 
+    <title>Counting Bus Stops</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<style>
+	table, th, td {
+  		border: 1px solid black;
+  		border-collapse: collapse;
+	}
+</style>
+<body>
+	<table>
+	<tr><th>Place</th><th>Number Of Stops</th><th>Bus Number</th><th>Stop Names</th></tr>
+    <tr><td>1</td><td th:text=${stops1}/><td th:text=${busno1}/><td th:text=${stopnames1}/></tr>
+    <tr><td>2</td><td th:text=${stops2}/><td th:text=${busno2}/><td th:text=${stopnames2}/></tr>
+    <tr><td>3</td><td th:text=${stops3}/><td th:text=${busno3}/><td th:text=${stopnames3}/></tr>
+    <tr><td>4</td><td th:text=${stops4}/><td th:text=${busno4}/><td th:text=${stopnames4}/></tr>
+    <tr><td>5</td><td th:text=${stops5}/><td th:text=${busno5}/><td th:text=${stopnames5}/></tr>
+    <tr><td>6</td><td th:text=${stops6}/><td th:text=${busno6}/><td th:text=${stopnames6}/></tr>
+    <tr><td>7</td><td th:text=${stops7}/><td th:text=${busno7}/><td th:text=${stopnames7}/></tr>
+    <tr><td>8</td><td th:text=${stops8}/><td th:text=${busno8}/><td th:text=${stopnames8}/></tr>
+    <tr><td>9</td><td th:text=${stops9}/><td th:text=${busno9}/><td th:text=${stopnames9}/></tr>
+    <tr><td>10</td><td th:text=${stops10}/><td th:text=${stops10}/><td th:text=${stopnames10}/></tr>
+    </table>
+</body>
+</html>
