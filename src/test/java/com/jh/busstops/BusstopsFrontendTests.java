@@ -17,15 +17,11 @@ class BusstopsFrontendTests {
 	@Autowired
 	private MockMvc mockMvc;
 
-//	@Test
-//	public void testHomePage() throws Exception {
-//		mockMvc.perform(get("/index.html"))
-//				.andExpect(content().string(containsString("Counting bus stops")));
-//	}
 
 //	@Test
 //	public void testBusStops() throws Exception {
-//		mockMvc.perform(get("/busstopsthyme"))
+//	        String key="fookey";
+//		mockMvc.perform(get("/busstopsthyme?key="+key))
 //				.andExpect(content().string(containsString("Stop Names")));
 //	}
 
