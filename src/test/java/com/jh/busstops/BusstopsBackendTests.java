@@ -11,9 +11,8 @@ class BusstopsBackendTests extends BusstopsModel{
 	
 	@Test
 	void testModel() {
-		String key="1d0894cf1c2341ada00e5b4b17a6bf23";
+		String key="fookey";
 		Assert.notEmpty(loadBusLines(key), "Buslines where not loaded succesfully");
-		//Assert.isTrue(loadBusLines(), "Buslines where not loaded succesfully");
 		Assert.notEmpty(loadStopPoints(key), "StopPoints where not loaded succesfully");
 		Assert.notEmpty(loadJourneyStopPoints(key), "JourneyStopPoints where not succesfully loaded");
 	}
